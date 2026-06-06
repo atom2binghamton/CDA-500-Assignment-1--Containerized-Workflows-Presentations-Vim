@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+
+  postgres:
+    image: postgres:15.6
+    container_name: ml_postgres
+    environment:
+      POSTGRES_DB: mldata
+      POSTGRES_USER: mluser
+      POSTGRES_PASSWORD: mlpassword
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - ml_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mluser -d mldata"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  jupyter:
+    build: ./jupyter
+    container_name: ml_jupyter
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_DB: mldata
+      POSTGRES_USER: mluser
+      POSTGRES_PASSWORD: mlpassword
+      JUPYTER_ENABLE_LAB: "yes"
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - ml_network
+
+networks:
+  ml_network:
+    driver: bridge
+
+volumes:
+  postgres_data:

@@ -1,0 +1,173 @@
+﻿# =====================================================================
+#             VIM 3-MINUTE SPEEDRUN: TEST YOUR MEMORY
+# =====================================================================
+# INSTRUCTIONS: Stay in Normal Mode. Do NOT use your mouse or arrow keys.
+# Rely entirely on your memory to complete these layout challenges.
+#
+# Hint: Use your half-page scrolling shortcut to move down to Step 1!
+# =====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# STEP 1: ADD TO THE BEGINNING & END OF A LINE
+# Task: Move to the line below. Use the shortcut to jump to the start
+# and type 'print("'. Then return to Normal Mode, jump to the very end
+# of the line, and append '")'. Press 'Esc' when finished.
+
+Success! You edited both sides of this line without arrow keys.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# STEP 2: DELETE A LINE & UNDO IT
+# Task: Move your cursor to the line below and delete it entirely.
+# Realize it was a mistake and use the undo shortcut to bring it back.
+
+Keep this line safe! Do not let it disappear permanently.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# STEP 3: MULTI-LINE COMMENTING
+# Task: Enter Visual Block mode. Highlight the first column of all three
+# lines below simultaneously. Trigger block insertion, type '# ', and
+# hit 'Esc' to comment out the entire block at once.
+
+These random words will break things
+if they are not commented out
+completely as a block.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# STEP 4: MULTI-LINE UNCOMMENTING
+# Task: Enter Visual Block mode on the first '#' below. Highlight down
+# to select the vertical column of '#' characters for all three lines.
+# Use the deletion shortcut to remove them all instantly.
+
+# Beautiful! You just
+# uncovered this block
+# using block deletion.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# STEP 5: YANK AND PASTE LINE BELOW
+# Task: Move your cursor to the TARGET line below. Use the shortcut to
+# yank (copy) the entire line. Then, use the lowercase paste shortcut
+# to paste a duplicate copy directly BELOW the target line.
+
+[TARGET] Duplicate this line and place it directly underneath.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# STEP 6: YANK AND PASTE LINE ABOVE
+# Task: Move your cursor to the TARGET line below. Use the shortcut to
+# yank (copy) the entire line. Then, use the uppercase paste shortcut
+# to paste a duplicate copy directly ABOVE the target line.
+
+[TARGET] Duplicate this line and place it directly on top of itself.
